@@ -1,0 +1,13 @@
+---
+- name: CCIE Security
+  hosts: "{{ cisco_router }}"
+  gather_facts: false
+
+
+  tasks:
+    - name: Amit Tanwar
+      raw: "show ip inter brief "
+  
+      register: print_output
+
+    -  debug: var=print_output.stdout_lines
