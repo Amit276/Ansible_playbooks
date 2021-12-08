@@ -1,6 +1,6 @@
 ---
 - name: CCIE Security
-  hosts: sw1
+  hosts: "{{ cisco_router }}"
   gather_facts: false
 
 
